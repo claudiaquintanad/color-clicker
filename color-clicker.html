@@ -16,14 +16,14 @@
             $(document).ready(function(){
                 $('#large_box').click(function(){
                     /* alert('you clicked the big box!');  */
-                    $(this).children().css('background-color', random_color);
+                    $(this).children().css('background-color', random_color());
                     $(this).css('background-color', random_color);
                 })
                 $('.middle_box').click(function(){
-                    $(this).parent().css('background-color', random_color);
+                    $(this).parent().css('background-color', random_color());
                 })
                 $('.side_box').click(function(){
-                    $(this).siblings().css('background-color', random_color);
+                    $(this).siblings().css('background-color', random_color());
                 })
                 $('.side_box').click(function(event){
                     event.stopPropagation();
